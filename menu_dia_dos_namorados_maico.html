@@ -1,0 +1,95 @@
+
+<style>
+  .menu-wrap { padding: 1.5rem 0; font-family: var(--font-sans); }
+  .menu-title { font-size: 22px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 4px; }
+  .menu-sub { font-size: 14px; color: var(--color-text-secondary); margin: 0 0 2rem; }
+  .section-label { font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-text-secondary); margin: 0 0 12px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 2rem; }
+  .card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: 6px; }
+  .card-name { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0; }
+  .card-duration { font-size: 12px; color: var(--color-text-secondary); margin: 0; }
+  .card-desc { font-size: 13px; color: var(--color-text-secondary); margin: 0; line-height: 1.5; }
+  .card-price { font-size: 14px; font-weight: 500; color: #0F6E56; margin: 4px 0 0; }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; margin-bottom: 2px; width: fit-content; }
+  .badge-casal { background: #FBEAF0; color: #993556; }
+  .badge-ind { background: #E1F5EE; color: #0F6E56; }
+  .extra-box { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; }
+  .extra-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 8px; }
+  .extra-item { font-size: 13px; color: var(--color-text-secondary); margin: 0 0 4px; line-height: 1.5; }
+  .extra-item strong { color: var(--color-text-primary); font-weight: 500; }
+  .divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+</style>
+
+<div class="menu-wrap">
+  <h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)">Menu Especial Dia dos Namorados Mai.Co Health & Spa</h2>
+
+  <p class="menu-title">Especial Dia dos Namorados</p>
+  <p class="menu-sub">Mai.Co Health & Spa</p>
+
+  <p class="section-label">Experiências para curtir a dois</p>
+  <div class="cards">
+    <div class="card">
+      <span class="badge badge-casal">Para o casal</span>
+      <p class="card-name">Massagem Bioenergética</p>
+      <p class="card-duration">1h — por pessoa</p>
+      <p class="card-desc">Equilíbrio energético e vitalidade.</p>
+      <p class="card-price">R$ 297,00 / pessoa</p>
+    </div>
+    <div class="card">
+      <span class="badge badge-casal">Para o casal</span>
+      <p class="card-name">Massagem de Velas</p>
+      <p class="card-duration">1h — por pessoa</p>
+      <p class="card-desc">Candle massage com sensação reconfortante, relaxamento profundo e nutrição da pele.</p>
+      <p class="card-price">R$ 227,00 / pessoa</p>
+    </div>
+    <div class="card">
+      <span class="badge badge-casal">Para o casal</span>
+      <p class="card-name">Day Spa Casal</p>
+      <p class="card-duration">2h</p>
+      <p class="card-desc">Banho de imersão, massagem relaxante e coffee break. Conexão, relaxamento e experiência compartilhada.</p>
+      <p class="card-price">1 profissional: R$ 660,00<br>2 profissionais: R$ 850,00</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Experiências para presentear seu amor</p>
+  <div class="cards">
+    <div class="card">
+      <span class="badge badge-ind">Individual</span>
+      <p class="card-name">Day Spa Relaxante</p>
+      <p class="card-duration">1h30</p>
+      <p class="card-desc">Terapias com óleos essenciais 100% naturais. Relaxamento profundo, alívio de tensões e fadiga mental. Inclui coffee break com lanche saudável.</p>
+      <p class="card-price">R$ 422,00</p>
+    </div>
+    <div class="card">
+      <span class="badge badge-ind">Individual</span>
+      <p class="card-name">Day Spa Vip Essence</p>
+      <p class="card-duration">2h</p>
+      <p class="card-desc">Banho + revitalização facial + máscara nutritiva + massagem corporal + coffee break. Experiência premium com foco em revitalização facial e corporal.</p>
+      <p class="card-price">R$ 530,00</p>
+    </div>
+    <div class="card">
+      <span class="badge badge-ind">Individual</span>
+      <p class="card-name">Massagem de Pedras Quentes</p>
+      <p class="card-duration">1h</p>
+      <p class="card-desc">Terapia com calor suave de pedras vulcânicas para harmonizar energias emocionais, mentais e físicas.</p>
+      <p class="card-price">R$ 227,00</p>
+    </div>
+    <div class="card">
+      <span class="badge badge-ind">Individual</span>
+      <p class="card-name">Massagem Relaxante</p>
+      <p class="card-duration">1h</p>
+      <p class="card-desc">Combina suavidade e firmeza para promover relaxamento muscular e mental.</p>
+      <p class="card-price">R$ 188,00</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="extra-box">
+    <p class="extra-title">Deixe seu presente ainda mais especial</p>
+    <p class="extra-item"><strong>Almofada artesanal</strong> — R$ 150,00 <span style="color: var(--color-text-secondary)">· Na compra de qualquer massagem: R$ 90,00</span></p>
+    <p class="extra-item">Velas aromáticas e óleos essenciais disponíveis para compor seu presente.</p>
+  </div>
+</div>
