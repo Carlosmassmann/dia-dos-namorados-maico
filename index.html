@@ -333,6 +333,18 @@
       font-size:.875rem; color:var(--p500); margin-bottom:16px;
     }
     .pcard-price { margin-bottom:20px; }
+    .pcard-price-duo {
+      display:flex; align-items:center; gap:12px;
+      background:var(--p50); border:1px solid var(--p100);
+      border-radius:1rem; padding:14px 16px; margin-bottom:20px;
+    }
+    .pcard-duo-item { flex:1; text-align:center; }
+    .pcard-duo-item .pcard-val { font-size:1.25rem; }
+    .pcard-duo-label {
+      font-size:.6875rem; font-weight:700; letter-spacing:.1em;
+      text-transform:uppercase; color:var(--p400); margin-top:3px;
+    }
+    .pcard-duo-divider { width:1px; height:40px; background:var(--p100); flex-shrink:0; }
     .pcard-val {
       font-family:var(--font-serif); font-size:1.5rem;
       font-weight:400; color:var(--p900);
@@ -619,9 +631,16 @@
           <p class="pcard-name">Day Spa Casal</p>
           <p class="pcard-dur">2h · Casal</p>
           <p class="pcard-desc">Banho de imersão, massagem relaxante e coffee break saudável. Conexão, relaxamento e uma experiência que vocês dois vivem juntos.</p>
-          <div class="pcard-price">
-            <div class="pcard-val">R$ 660,00</div>
-            <div class="pcard-sub">1 profissional &nbsp;·&nbsp; R$ 850,00 com 2 profissionais</div>
+          <div class="pcard-price-duo">
+            <div class="pcard-duo-item">
+              <div class="pcard-val">R$ 660,00</div>
+              <div class="pcard-duo-label">1 Profissional</div>
+            </div>
+            <div class="pcard-duo-divider"></div>
+            <div class="pcard-duo-item">
+              <div class="pcard-val">R$ 850,00</div>
+              <div class="pcard-duo-label">2 Profissionais</div>
+            </div>
           </div>
           <a href="https://wa.me/5551990106281?text=Quero%20o%20Day%20Spa%20Casal" class="btn btn-card" target="_blank" rel="noopener">Quero essa experiência</a>
         </div>
