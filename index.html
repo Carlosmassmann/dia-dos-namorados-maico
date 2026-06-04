@@ -211,8 +211,17 @@
     .strip-val { font-size:1.125rem; font-weight:700; color:var(--s400); }
     .strip-lbl { font-size:.75rem; font-weight:300; color:rgba(255,255,255,.55); text-transform:uppercase; letter-spacing:.1em; }
     @media(max-width:600px){
-      .strip-item { padding:8px 20px; border-right:none; border-bottom:1px solid rgba(255,255,255,.08); width:100%; justify-content:center; }
+      .strip-inner { flex-direction:column; gap:0; }
+      .strip-item {
+        padding:12px 24px; border-right:none;
+        border-bottom:1px solid rgba(255,255,255,.08);
+        width:100%; justify-content:center;
+        flex-direction:row; align-items:center; gap:10px;
+      }
       .strip-item:last-child { border-bottom:none; }
+      .strip-item > div { display:flex; align-items:center; gap:8px; }
+      .strip-val { font-size:1rem; }
+      .strip-lbl { font-size:.7rem; letter-spacing:.08em; }
     }
 
     /* ── INTRO ── */
@@ -646,35 +655,21 @@
       <div class="pgrid">
         <div class="pcard r d1">
           <p class="pcard-name">Massagem de Velas</p>
-          <p class="pcard-dur">1h por pessoa · Casal</p>
+          <p class="pcard-dur">1h · Casal</p>
           <p class="pcard-desc">Calor que relaxa, aroma que acolhe. Candle massage com nutrição da pele e relaxamento profundo.</p>
-          <div class="pcard-price-duo">
-            <div class="pcard-duo-item">
-              <div class="pcard-val">R$ 227,00</div>
-              <div class="pcard-duo-label">Por pessoa</div>
-            </div>
-            <div class="pcard-duo-divider"></div>
-            <div class="pcard-duo-item">
-              <div class="pcard-val">R$ 454,00</div>
-              <div class="pcard-duo-label">Casal</div>
-            </div>
+          <div class="pcard-price">
+            <div class="pcard-val">R$ 454,00</div>
+            <div class="pcard-sub">casal</div>
           </div>
           <a href="https://wa.me/5551990106281?text=Quero%20a%20Massagem%20de%20Velas%20Casal" class="btn btn-card" target="_blank" rel="noopener">Quero essa experiência</a>
         </div>
         <div class="pcard r d2">
           <p class="pcard-name">Massagem Bioenergética</p>
-          <p class="pcard-dur">1h por pessoa · Casal</p>
+          <p class="pcard-dur">1h · Casal</p>
           <p class="pcard-desc">Equilíbrio energético e vitalidade para os dois. Técnicas que harmonizam corpo e mente e aliviam bloqueios emocionais.</p>
-          <div class="pcard-price-duo">
-            <div class="pcard-duo-item">
-              <div class="pcard-val">R$ 267,00</div>
-              <div class="pcard-duo-label">Por pessoa</div>
-            </div>
-            <div class="pcard-duo-divider"></div>
-            <div class="pcard-duo-item">
-              <div class="pcard-val">R$ 594,00</div>
-              <div class="pcard-duo-label">Casal</div>
-            </div>
+          <div class="pcard-price">
+            <div class="pcard-val">R$ 594,00</div>
+            <div class="pcard-sub">casal</div>
           </div>
           <a href="https://wa.me/5551990106281?text=Quero%20a%20Massagem%20Bioenergetica%20Casal" class="btn btn-card" target="_blank" rel="noopener">Quero essa experiência</a>
         </div>
